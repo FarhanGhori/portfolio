@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppons:wght$400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(225, 125, 159);
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection > div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        /* Work Experience */
+        /* Work Experience Section */
+#work-experience {
+    background-color: #1a1a40;
+    padding: 80px 0;
+}
+
+#work-experience h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.secondSection {
+    max-width: 90%;
+    margin: auto;
+    color: #fff;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.vertical {
+    background: #2a2a6f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.image-top {
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 20px);
+}
+
+.vertical-title {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #9c97f1;
+    text-align: center;
+}
+
+.vertical-desc {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ddd;
+    text-align: center;
+}
+
+
+        /* About Section */
+        #about {
+            background-color: rgb(18, 18, 62);
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: lightgray;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        #services {
+            background-color: #1a1a40;
+            padding: 80px 0;
+        }
+
+        #services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .service {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #9c97f1;
+        }
+
+        .service p {
+            color: lightgray;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: rgb(0, 0, 33);
+            padding: 100px 0;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            background-color: #9c97f1;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #0e0e1a;
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer > div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Farhan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="purple">Farhan</span> 
+                    <div>and I'm a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn"><a href="https://FarhanGhori.github.io/my-resume/resume.pdf" target="_blank" style="color: white; text-decoration: none;">Resume</a></button>
+                        <button class="btn"><a href="https://github.com/FarhanGhori" target="_blank" style="color: white; text-decoration: none;">Visit Github</a></button>
+                    </div>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am an aspiring full stack developer with a focus on building dynamic web applications. I love learning new technologies and applying them to solve real-world problems. I have experience working with both front-end and back-end tools to create seamless user experiences.</p>
+        </section>
+
+        <hr>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Building responsive and interactive websites using modern web technologies.</p>
+            </div>
+            <div class="service">
+                <h3>Backend Development</h3>
+                <p>Developing efficient and scalable server-side applications with databases and APIs.</p>
+            </div>
+            <div class="service">
+                <h3>Consultation</h3>
+                <p>Offering guidance and consultation for web development best practices.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="section">
+            <h1>Work Experience</h1>
+            <div class="secondSection">
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="PngItem_1822816.png" alt="Work Icon">
+                        <div class="vertical-title">
+                            Full Stack Web Developer (May 2024 - June 2024)
+                        </div>
+                        <div class="vertical-desc">
+                            Learned new emerging technologies and took initiative to order technical direction and creative solutions. Developed scalable applications using modern programming languages, frameworks, and libraries. Enhanced user experience by developing responsive web designs for seamless cross-device compatibility. Delivered high-quality work within deadlines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Farhan's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-fifth">
+                <ul>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; farhansportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Full Stack Developer', 'Consultant'],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop: true,
+        });
+    </script>
+</body>
+</html>
