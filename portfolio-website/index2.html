@@ -6,11 +6,12 @@
     <title>Farhan - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppons:wght$400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -21,20 +22,21 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            height: 80px;
+            padding: 10px 20px;
             background-color: rgb(18, 18, 62);
         }
 
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
             list-style: none;
-            margin: 0 23px;
+            margin: 0 15px;
         }
 
         nav ul li a {
@@ -51,22 +53,16 @@
             border: 0;
             background: #9c97f1;
             height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        .left {
-            font-size: 1.3rem;
+            margin: 40px 5%;
         }
 
         .firstSection {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             margin: 130px 0;
-        }
-
-        .firstSection > div {
-            width: 30%;
+            text-align: center;
         }
 
         .leftSection {
@@ -74,7 +70,7 @@
         }
 
         .leftSection .buttons {
-            padding: 50px 0;
+            padding: 30px 0;
         }
 
         .leftSection .btn {
@@ -85,91 +81,22 @@
             border-radius: 6px;
             font-size: 20px;
             cursor: pointer;
+            margin: 5px;
         }
 
         .rightSection img {
-            width: 80%;
+            max-width: 90%;
+            height: auto;
+            margin: 20px 0;
         }
 
         .purple {
             color: rgb(170, 107, 228);
         }
 
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(170, 107, 228);
-        }
-
         .section {
-            padding: 100px 0;
+            padding: 100px 5%;
             text-align: center;
-        }
-
-        /* Work Experience */
-        /* Work Experience Section */
-#work-experience {
-    background-color: #1a1a40;
-    padding: 80px 0;
-}
-
-#work-experience h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #fff;
-}
-
-.secondSection {
-    max-width: 90%;
-    margin: auto;
-    color: #fff;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.vertical {
-    background: #2a2a6f;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    margin-bottom: 40px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.image-top {
-    width: 40px;
-    position: absolute;
-    top: -20px;
-    left: calc(50% - 20px);
-}
-
-.vertical-title {
-    font-size: 1.4rem;
-    margin-top: 20px;
-    color: #9c97f1;
-    text-align: center;
-}
-
-.vertical-desc {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #ddd;
-    text-align: center;
-}
-
-
-        /* About Section */
-        #about {
-            background-color: rgb(18, 18, 62);
         }
 
         #about h2 {
@@ -185,23 +112,13 @@
             line-height: 1.8;
         }
 
-        /* Services Section */
-        #services {
-            background-color: #1a1a40;
-            padding: 80px 0;
-        }
-
-        #services h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #fff;
-        }
-
         .service {
-            display: inline-block;
-            width: 30%;
-            margin: 1%;
-            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #services .service {
+            width: 100%;
+            padding: 0 10px;
         }
 
         .service h3 {
@@ -215,23 +132,62 @@
             line-height: 1.6;
         }
 
-        /* Contact Section */
-        #contact {
-            background-color: rgb(0, 0, 33);
-            padding: 100px 0;
-        }
-
-        #contact h2 {
+        #work-experience h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            color: #fff;
         }
 
-        #contact form {
+        .secondSection {
+            max-width: 90%;
+            margin: auto;
+            color: #fff;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .vertical {
+            background: #2a2a6f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
             max-width: 600px;
+            margin-bottom: 40px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-top {
+            width: 40px;
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 20px);
+        }
+
+        .vertical-title {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            color: #9c97f1;
+        }
+
+        .vertical-desc {
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        /* Contact Section */
+        #contact form {
+            max-width: 90%;
             margin: 0 auto;
         }
 
-        #contact form input, #contact form textarea {
+        #contact form input,
+        #contact form textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -239,34 +195,42 @@
             border: none;
         }
 
-        #contact form button {
-            padding: 10px 20px;
-            background-color: #9c97f1;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
         .footer {
             background-color: #0e0e1a;
             display: flex;
-            padding: 23px 122px;
+            flex-wrap: wrap;
             justify-content: space-evenly;
+            padding: 20px 0;
         }
 
-        .footer ul {
-            list-style: none;
+        .footer div {
+            text-align: center;
+            margin: 10px;
         }
 
-        .footer > div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
+        .footer-rights {
             text-align: center;
             color: gray;
             padding: 12px 0;
+        }
+
+        @media (min-width: 768px) {
+            .firstSection {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .firstSection > div {
+                width: 45%;
+            }
+
+            nav ul {
+                justify-content: flex-end;
+            }
+
+            .service {
+                width: 30%;
+            }
         }
     </style>
 </head>
@@ -287,7 +251,6 @@
     </header>
 
     <main>
-        <!-- Home Section -->
         <section id="home" class="section">
             <div class="firstSection">
                 <div class="leftSection">
